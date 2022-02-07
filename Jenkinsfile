@@ -7,7 +7,8 @@ pipeline{
         script{
          def db_name= "mydb"
         }
-        sh "python python_script_test3/first.py"
+        sh "export DB_NAME = ${db_name}"
+        sh "python first.py"
       }    
     }
   }
