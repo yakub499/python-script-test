@@ -4,7 +4,9 @@ pipeline{
   stages{
     stage("Build"){
       steps{
-        db_name= "mydb"
+        script{
+         def db_name= "mydb"
+        }
         sh "python-script-test/first.py"
       }    
     }
