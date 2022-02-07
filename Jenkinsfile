@@ -7,7 +7,7 @@ pipeline{
         script{
          def db_name= "mydb"
         }
-        sh "python python-script-test/first.py"
+        sh "python python_script_test3/first.py"
       }    
     }
   }
